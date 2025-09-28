@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class exercicio34 {
   public static void main(String[] args) {
+    //Infelizmente troquei o número dos exercícios e esse seria o 35 e o 35 seria o 34
     Scanner scan = new Scanner(System.in);
 
     System.out.print("Insira três números separados por espaço: ");

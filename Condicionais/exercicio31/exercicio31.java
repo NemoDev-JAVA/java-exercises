@@ -14,11 +14,19 @@ public class exercicio31 {
       return;
     }
 
-    Boolean media = (num1 + num2) / 2 > 6;
+    Boolean nota1 = num1 >= 6 ? true : false;
+    Boolean nota2 = num2 >= 6 ? true : false;
 
-    String resultado = media ? "Aprovado" : "Reprovado";
+    if (nota1 && nota2) {
+      System.out.println("Baseado nas notas o aluno foi aprovado!");
+    } else if (!nota1 && nota2) {
+      System.out.println("Baseado nas notas o aluno foi reprovado na prova 1!");
+    } else if (nota1 && !nota2) {
+      System.out.println("Baseado nas notas o aluno foi reprovado na prova 2!");
+    } else {
+      System.out.println("Baseado nas notas o aluno foi reprovado em ambas as provas!");
+    }
 
-    System.out.println("Baseado nas notas o aluno foi: " + resultado + "!");
     scan.close();
   }
 }
